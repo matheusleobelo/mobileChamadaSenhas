@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SenhasService } from '../services/senhas.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  inputNovaSenha: string = '';
+
+  constructor(public senhasService: SenhasService) {}
 
 }

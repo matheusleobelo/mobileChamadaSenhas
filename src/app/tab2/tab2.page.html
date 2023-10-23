@@ -13,5 +13,13 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-card>
+    <ion-button expand="block" (click)="senhasService.chamarSenha()">Chamar senha</ion-button>
+    <ion-card-header>
+      <ion-card-title>{{ senhasService.primeiroValor}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  
+
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
