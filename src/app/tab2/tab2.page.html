@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title> Tab 2 </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,30 +12,77 @@
   </ion-header>
 
   <ion-card>
-    <ion-button expand="block" (click)="senhasService.chamarSenha()">Chamar senha</ion-button>
+    <ion-button expand="block" (click)="senhasService.chamarSenha()"
+      >Chamar senha</ion-button
+    >
     <ion-card-header>
-      <ion-card-title>{{ senhasService.primeiroValor}}</ion-card-title>
+      <ion-card-title
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        1]}}</ion-card-title
+      >
     </ion-card-header>
   </ion-card>
 
   <ion-list>
     <ion-item>
-      <ion-label>{{senhasService.senhasChamadas[0]}}</ion-label>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        1]}}</ion-label
+      >
     </ion-item>
     <ion-item>
-      <ion-label>{{senhasService.senhasChamadas[1]}}</ion-label>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        2]}}</ion-label
+      >
     </ion-item>
     <ion-item>
-      <ion-label>{{senhasService.senhasChamadas[2]}}</ion-label>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        3]}}</ion-label
+      >
     </ion-item>
     <ion-item>
-      <ion-label>{{senhasService.senhasChamadas[3]}}</ion-label>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        4]}}</ion-label
+      >
     </ion-item>
     <ion-item>
-      <ion-label>{{senhasService.senhasChamadas[4]}}</ion-label>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        5]}}</ion-label
+      >
+    </ion-item>
+    <ion-item>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        6]}}</ion-label
+      >
+    </ion-item>
+    <ion-item>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        7]}}</ion-label
+      >
+    </ion-item>
+    <ion-item>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        8]}}</ion-label
+      >
+    </ion-item>
+    <ion-item>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        9]}}</ion-label
+      >
+    </ion-item>
+    <ion-item>
+      <ion-label
+        >{{ senhasService.senhasChamadas[senhasService.senhasChamadas.length -
+        10]}}</ion-label
+      >
     </ion-item>
   </ion-list>
-  
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
